@@ -1,0 +1,25 @@
+
+  <form class="forms-sample" (ngSubmit)="newClient(newClientForm.value)" [formGroup]="newClientForm">
+    <div class="form-group">
+      <label for="txtNombre">Nombres</label>
+      <input type="text" class="form-control" id="txtNombre" placeholder="Nombre" formControlName="nombre">
+    </div>
+    <div class="form-group">
+      <label for="txtApelPaterno">Apellido Paterno</label>
+      <input type="email" class="form-control" id="txtApelPaterno" placeholder="Apellido Paterno" formControlName="apellidoPaterno">
+    </div>
+    <div class="form-group">
+      <label for="txtApelMaterno">Apellido Materno</label>
+      <input type="text" class="form-control" id="txtApelMaterno" placeholder="Apellido Materno" formControlName="apellidoMaterno">
+    </div>
+    <div class="form-group">
+      <label for="txtFecNac">Fecha de Nacimiento</label>
+      <input type="date" class="form-control" id="txtFecNac" placeholder="Fecha de nacimiento" formControlName="fecNacimiento">
+    </div>
+    <div class="form-group">
+        <label for="txtEdad">Edad</label>
+        <input type="number" class="form-control" id="txtEdad" placeholder="Edad" formControlName="edad">
+      </div>
+    <button type="submit" class="btn btn-success mr-2" [disabled]="!newClientForm.valid">Aceptar</button>
+  </form>
+
