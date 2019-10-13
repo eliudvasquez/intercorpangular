@@ -49,4 +49,6 @@ export class HomeComponent implements OnInit {
     this.desvEstandar = Math.sqrt(this.varianza);
   }
 
+  /* propiedad de Eliud Vasquez */
+
 }
